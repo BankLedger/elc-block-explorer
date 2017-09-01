@@ -1,0 +1,12 @@
+<div class="alert alert-warning" 
+  data-ng-show="!txs[0].txid && !loading"
+  translate>没有交易信息</div>
+<div  data-ng-show="txs && txs[0].txid " data-ng-repeat="tx in txs">
+	
+  <div class="block-tx" data-ng-hide="tx.voutSimple.length ===1 && tx.voutSimple[0].addr.indexOf('Unparsed address') >-1"  data-ng-include src="'views/transaction/tx.html'"></div>
+</div>	
+<div class="progress progress-striped active" data-ng-show="loading">
+  <div class="progress-bar progress-bar-info" style="width: 100%">
+    <span translate>加载交易中...</span>
+  </div>
+</div>

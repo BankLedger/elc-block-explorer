@@ -1,0 +1,22 @@
+<div class="connection-status container" data-ng-controller="ConnectionController">
+
+  <div class="alert alert-danger" 
+    data-ng-show="!serverOnline || !clienteOnline || !apiOnline"
+    data-ng-init="getConnStatus()">
+
+    <strong translate>警告!</strong>
+
+    <p data-ng-show="!apiOnline" translate>
+     	 无法从网络中实时更新信息， 尝试连接失败！ (Tried connecting to bitcoind at {{host}}:{{port}} and failed.)
+    </p>
+
+    <p data-ng-show="!serverOnline" translate>
+      无法连接到选举链服务器，尝试重新连... 
+    </p>
+
+    <p data-ng-show="!clienteOnline" translate>
+      无法连接到互联网，请检查您的网络连接。
+    </p>
+
+  </div>
+</div>

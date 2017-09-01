@@ -1,0 +1,18 @@
+{
+  "network": "livenet",
+  "port": 80,
+  "services": [
+    "bitcoind",
+    "web",
+    "insight-api",
+    "insight-ui"
+  ],
+  "servicesConfig": {
+    "bitcoind": {
+      "spawn": {
+        "datadir": "/root/.elcoin/",
+        "exec": "/root/elcoind"
+      }
+    }
+  }
+}
