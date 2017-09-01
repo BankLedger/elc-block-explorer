@@ -2,9 +2,9 @@
 Block explorer for Votechain
 
 
-#编译说明
+# 编译说明
 
-#一.	Ubuntu系统
+# 一.	Ubuntu系统
 
 1.	准备工作
 
@@ -104,7 +104,7 @@ Block explorer for Votechain
     至此编译结束
 
 
-#二.安装bitcore
+# 二.安装bitcore
 
     1.将bitcore 目录移动到安装浏览器的系统 的/root/.nvm/versions/node/v4.6.0/lib/node_modules/
     
